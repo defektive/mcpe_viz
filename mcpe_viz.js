@@ -869,9 +869,11 @@ function correctGeoJSONName(feature) {
         var props = feature.getProperties();
         var a = [];
         var pushTrimmedString = function(a, str) {
-            var s = str.trim();
-            if (s.length > 0 ) {
-                a.push(s);
+            if (typeof str !== 'undefined') {
+                var s = str.trim();
+                if (s.length > 0 ) {
+                    a.push(s);
+                }
             }
         };
         pushTrimmedString(a, props[name].Text1);
