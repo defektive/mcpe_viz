@@ -2160,7 +2160,7 @@ function initDimension() {
             view: new ol.View({
                 projection: projection,
                 center: [ (dimensionInfo[globalDimensionId].worldWidth/2),  (dimensionInfo[globalDimensionId].worldHeight/2)],
-                resolution: 0.5
+                resolution: 2
             })
         });
     } else {
