@@ -3300,4 +3300,6 @@ $(function() {
 
     // display players by default
     entityToggle("63");
+    map.handleZoomToExtent();
+
 });
